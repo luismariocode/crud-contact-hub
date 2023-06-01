@@ -22,12 +22,14 @@ export default function Dashboard(): JSX.Element {
     const [showContacts, setShowContacts] = useState<boolean>(false);
     const [showAllContacts, setShowAllContacts] = useState<boolean>(false);
     const [showUsers, setShowUsers] = useState<boolean>(false);
+    
 
 
 
     useEffect(() => {
         //Empieza mostrando los contactos
         setShowContacts(true);
+        
 
         //Cargo de los datos del usuario
         const fetchUserDetails = async () => {
@@ -49,6 +51,7 @@ export default function Dashboard(): JSX.Element {
 
     //Funciones para mostrar los componentes
     const handleShowContacts = async () => {
+        
         setShowContacts(true);
         setShowAllContacts(false);
         setShowUsers(false);
@@ -112,7 +115,7 @@ export default function Dashboard(): JSX.Element {
                 sx={{ justifyContent: 'space-around', marginTop: 2 }}
                 width={"100%"}>
 
-                <Button variant="text" color="primary" onClick={handleShowContacts}>Contactos</Button>
+                <Button variant="text" color="success" onClick={handleShowContacts}>Contactos</Button>
 
 
                 {userDetails?.role === 1 || userDetails?.role === 3 ? (

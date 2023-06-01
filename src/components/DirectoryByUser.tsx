@@ -253,6 +253,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newContact.first_name}
                             onChange={(e) => setNewContact({ ...newContact, first_name: e.target.value })}
                         />
@@ -261,6 +262,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newContact.last_name}
                             onChange={(e) => setNewContact({ ...newContact, last_name: e.target.value })}
                         />
@@ -269,6 +271,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newContact.email}
                             onChange={(e) => setNewContact({ ...newContact, email: e.target.value })}
                         />
@@ -278,6 +281,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             fullWidth
                             type="number"
                             margin="normal"
+                            required={true}
                             InputProps={{ inputProps: { min: 0, max: 3 } }}
                             value={newContact.phone}
                             onChange={(e) => setNewContact({ ...newContact, phone: e.target.value })}
@@ -287,6 +291,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newContact.company}
                             onChange={(e) => setNewContact({ ...newContact, company: e.target.value })}
                         />
@@ -321,6 +326,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                     <TextField
                             label="Nombre"
                             variant="outlined"
+                            required={true}
                             fullWidth
                             margin="normal"
                             value={newContact.first_name}
@@ -329,6 +335,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                         <TextField
                             label="Apellido"
                             variant="outlined"
+                            required={true}
                             fullWidth
                             margin="normal"
                             value={newContact.last_name}
@@ -337,6 +344,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                         <TextField
                             label="Correo Electrónico"
                             variant="outlined"
+                            required={true}
                             fullWidth
                             margin="normal"
                             value={newContact.email}
@@ -346,6 +354,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                             label="Teléfono"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             type="number"
                             margin="normal"
                             InputProps={{ inputProps: { min: 0, max: 3 } }}
@@ -355,6 +364,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
                         <TextField
                             label="Compañía"
                             variant="outlined"
+                            required={true}
                             fullWidth
                             margin="normal"
                             value={newContact.company}

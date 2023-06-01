@@ -246,6 +246,7 @@ export default function User(): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newUser.user}
                             onChange={(e) => setNewUser({ ...newUser, user: e.target.value })}
                         />
@@ -253,6 +254,7 @@ export default function User(): JSX.Element {
                             label="First Name"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.first_name}
                             onChange={(e) => setNewUser({ ...newUser, first_name: e.target.value })}
@@ -261,6 +263,7 @@ export default function User(): JSX.Element {
                             label="Last Name"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.last_name}
                             onChange={(e) => setNewUser({ ...newUser, last_name: e.target.value })}
@@ -269,6 +272,7 @@ export default function User(): JSX.Element {
                             label="Email"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.email}
                             onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
@@ -277,6 +281,7 @@ export default function User(): JSX.Element {
                             label="Role"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             type="number"
                             margin="normal"
                             InputProps={{ inputProps: { min: 0, max: 3 } }}
@@ -287,6 +292,7 @@ export default function User(): JSX.Element {
                             label="Password"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.password}
                             onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
@@ -324,6 +330,7 @@ export default function User(): JSX.Element {
                             variant="outlined"
                             fullWidth
                             margin="normal"
+                            required={true}
                             value={newUser.user}
                             onChange={(e) => setNewUser({ ...newUser, user: e.target.value })}
                         />
@@ -331,6 +338,7 @@ export default function User(): JSX.Element {
                             label="Nombre"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.first_name}
                             onChange={(e) => setNewUser({ ...newUser, first_name: e.target.value })}
@@ -339,6 +347,7 @@ export default function User(): JSX.Element {
                             label="Apellido"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.last_name}
                             onChange={(e) => setNewUser({ ...newUser, last_name: e.target.value })}
@@ -347,6 +356,7 @@ export default function User(): JSX.Element {
                             label="Correo electrónico"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.email}
                             onChange={(e) => setNewUser({ ...newUser, email: e.target.value })}
@@ -356,6 +366,7 @@ export default function User(): JSX.Element {
                             variant="outlined"
                             fullWidth
                             type="number"
+                            required={true}
                             margin="normal"
                             InputProps={{ inputProps: { min: 0, max: 3 } }}
                             value={newUser.role}
@@ -365,6 +376,7 @@ export default function User(): JSX.Element {
                             label="Contraseña"
                             variant="outlined"
                             fullWidth
+                            required={true}
                             margin="normal"
                             value={newUser.password}
                             onChange={(e) => setNewUser({ ...newUser, password: e.target.value })}
