@@ -177,6 +177,7 @@ export default function DirectoryByUser(idUser:any): JSX.Element {
 
     return (
         <Box padding={3}>
+            <Typography variant="h4" sx={{ fontWeight: 700, marginBottom: 3 }}>Mis Contactos</Typography>
             <TableContainer component={Paper}>
                 <Table>
                 <TableHead sx={{ backgroundColor: '#e0e0e0' }}>
